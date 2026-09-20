@@ -1,0 +1,67 @@
+.book-detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.book-cover {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.book-details h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--inverted-text-color);
+}
+
+.book-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.book-info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-info-label {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.book-info-value {
+    color: var(--inverted-text-color);
+}
+
+/* TODO : Utiliser les bonnes classes dans le HTML pour reproduire le visuel désiré */
+.submissions {
+    background: var(--background);
+    margin-bottom: 2rem;
+}
+
+.submission-item {
+    padding: 1rem 0;
+}
+
+.submission-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submission-time {
+    font-weight: bold;
+    color: var(--time);
+}
+
+.submission-format {
+    background: var(--genre-background);
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}

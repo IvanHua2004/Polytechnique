@@ -1,0 +1,141 @@
+.form-section {
+    width: 700px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 0;
+}
+
+form > label,
+form > p {
+    font-size: 24px;
+    margin-left: 1px;
+    margin: 16px 0 4px 0;
+}
+
+form > input:disabled,
+form > input:disabled:hover,
+form > input:disabled:focus,
+form > input:disabled:active {
+    background-color: var(--input-disabled-bg);
+    border-color: transparent;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+form > input:disabled::placeholder {
+    color: var(--disabled-text);
+    opacity: 1;
+}
+
+form:not(:has(#has-max:checked)) .max-views-label,
+form:not(:has(#has-max:checked)) .max-views-radio,
+form:has(#private:checked) .private-label,
+form:has(#private:checked) .private-radio {
+    pointer-events: none;
+    cursor: default;
+}
+
+form:not(:has(#has-max:checked)) .max-views-label,
+form:has(#private:checked) .private-label {
+    opacity: 0.3;
+}
+
+form > input[type="file"],
+form > input[type="file"]:hover
+form > input[type="file"]:focus
+form > input[type="file"]:active {
+    line-height: 48px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+form > input[type="file"]::file-selector-button {
+    height: 48px;
+    background-color: var(--button-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 17px;
+    cursor: pointer;
+    margin-right: 14px;
+    outline: none;
+    min-width: 200px;
+}
+
+input[type="file"]:hover::file-selector-button,
+input[type="file"]::file-selector-button:hover,
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+input[type="file"]:active::file-selector-button,
+input[type="file"]::file-selector-button:active,
+button:active {
+    background-color: var(--button-active-bg);
+    border-color: var(--input-border-selected);
+}
+
+form > div,
+form > div > label {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    align-items: center;
+}
+
+form > div > label {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+form > button[type="submit"] {
+    margin: 18px 0 0 0;
+}
+
+.has-max-section {
+    margin-top: 20px;
+    margin-bottom: 1px;
+    font-size: 20px;
+    height: 35px;
+}
+
+.has-max-section > input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+.error-section,
+.success-section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 72px;
+    gap: 24px;
+    font-size: 22px;
+}
+
+.error-section {
+    align-items: start;
+    width: auto;
+}
+
+.show-error .form-section,
+.show-success .form-section {
+    display: none;
+}
+
+.show-error .error-section,
+.show-success .success-section {
+    display: flex;
+}
+
+#code {
+    color: var(--accent-color);
+    font-weight: bold;
+}

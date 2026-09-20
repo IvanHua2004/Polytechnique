@@ -1,0 +1,71 @@
+.post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid var(--border-color);
+    margin-bottom: 5px;
+    width: 75%;
+}
+
+.post:hover {
+    border-color: var(--highlight-color);
+    transform: scale(1.05);
+    transition: transform 0.25s;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.post-author {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--author-color);
+}
+
+.post-category {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--category-color);
+}
+
+.post-date {
+    font-size: 1em;
+    font-style: italic;
+    color: var(--date-color);
+}
+
+.post-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--post-title-color);
+    text-align: left;
+    padding-left: 30px;
+    margin: 20px;
+}
+
+.post-comments{
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.own-post {
+    border-color: var(--author-color);
+}
+
+.right {
+    right: 10px;
+}
+
+.delete-button {
+    background-color: white;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolyJeu - Résultats</title>
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/results.css">
+  <script src="assets/js/result.js" defer type="module"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="nav-title">PolyJeu</h1>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Configuration</a>
+        </li>
+        <li class="nav-item">
+          <a href="game.html" class="nav-link">Jeu</a>
+        </li>
+        <li class="nav-item">
+          <a href="results.html" class="nav-link active">Résultats</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="main-content">
+    <div class="container">
+      <h2>Page des Résultats</h2>
+      <table id="result-table">
+        <tbody id="result-table-body">
+          <tr>
+            <th>Nom</th>
+            <th>Score</th>
+            <th>Taille du jeu</th>
+            <th>Date</th>
+          </tr>
+          <!-- Les résultats seront affichées ici -->
+        </tbody>
+      </table>
+      <fieldset>
+        <legend>Moyenne des score par taille de terrain</legend>
+        <ul id="average-score-content"></ul>
+      </fieldset>
+      <button id="avg-score-btn" class="btn btn-primary">
+        Calculer moyennes
+      </button>
+      <button id="delete-score-btn" class="btn btn-primary">
+        Supprimer tous les scores
+      </button>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/roboto.woff2") format("woff2");
+}
+
+:root {
+    --light-text: rgb(245, 245, 245);
+    --dark-text: rgb(25, 25, 25);
+    --error-text: rgb(180, 0, 0);
+    --accent-color: hsl(229, 100%, 60%);
+    --placeholder-text: rgb(150, 150, 150);
+    --disabled-text: rgb(160, 160, 160);
+
+    --header-bg: hsl(229, 64%, 49%);
+    --header-button: rgba(255, 255, 255, 0.10);
+    --header-button-hover: rgba(255, 255, 255, 0.15);
+    --header-button-active: rgba(255, 255, 255, 0.20);
+
+    --image-bg: hsl(0, 0%, 70%);
+    --view-bg: hsla(0, 0%, 10%, 0.8);
+    --body-bg: hsl(0, 0%, 100%);
+
+    --input-bg: hsl(0, 0%, 100%);
+    --input-hover-bg: hsl(0, 0%, 97%);
+    --input-active-bg: hsl(0, 0%, 93%);
+    --input-disabled-bg: hsl(0, 0%, 87%);
+    --input-border: rgba(0, 0, 0, 0.15);
+    --input-border-selected: rgba(0, 0, 0, 0.25);
+    --input-outline-selected: hsl(229, 64%, 60%);
+
+    --button-bg: hsl(0, 0%, 96%);
+    --button-hover-bg: hsl(0, 0%, 92%);
+    --button-active-bg: hsl(0, 0%, 88%);
+
+    --button-accent-bg: hsl(229, 100%, 60%);
+    --button-accent-hover-bg: hsl(229, 100%, 65%);
+    --button-accent-active-bg: hsl(229, 100%, 70%);
+    --button-accent-disabled-bg: hsl(229, 100%, 75%);
+
+    --button-delete-bg: hsl(0, 95%, 40%);
+    --button-delete-hover-bg: hsl(0, 95%, 43%);
+    --button-delete-active-bg: hsl(0, 95%, 46%);
+    --button-delete-disabled-bg: hsl(0, 70%, 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "roboto";
+    overflow: hidden;
+    background-color: var(--body-bg);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    height: 62px;
+    align-items: center;
+    padding: 0 26px;
+    gap: 24px;
+    background-color: var(--header-bg);
+    color: var(--light-text);
+}
+
+header h1 {
+    flex: 1;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+header a {
+    color: var(--light-text);
+    border: none;
+    font-size: 18px;
+    padding: 10px 16px 8px;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: var(--header-button);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+header a:hover {
+    background-color: var(--header-button-hover);
+}
+
+header a:active {
+    background-color: var(--header-button-active);
+}
+
+header a div {
+    height: 20px;
+    width: 20px;
+    background: center / contain no-repeat;
+}
+
+.explore-icon {
+    background-image: url("../icons/explore.svg");
+}
+
+.publish-icon {
+    background-image: url("../icons/publish.svg");
+}
+
+main {
+    flex: 1;
+    width: 100vw;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    width: 1000px;
+    max-width: 80vw;
+    height: auto;
+    min-height: 100%;
+    color: var(--dark-text);
+}
+
+#error-message {
+    color: var(--error-text);
+}
+
+form > input {
+    height: 48px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    outline: none;
+    padding: 0 16px;
+    border-radius: 17px;
+    font-size: 16px;
+    outline-offset: 1px;
+}
+
+input::placeholder {
+    color: var(--placeholder-text);
+    opacity: 1;
+}
+
+form > input:hover {
+    background-color: var(--input-hover-bg);
+}
+
+form > input:focus {
+    border-color: var(--input-border-selected);
+    outline: 2px solid var(--input-outline-selected);
+}
+
+form > input:active {
+    background-color: var(--input-active-bg);
+}
+
+form > button[type="submit"] {
+    height: 48px;
+    border-radius: 17px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--light-text);
+    background-color: var(--button-accent-bg);
+    border: none;
+    outline: none;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form > button[type="submit"]:hover {
+    background-color: var(--button-accent-hover-bg);
+}
+
+form > button[type="submit"]:active {
+    background-color: var(--button-accent-active-bg);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--accent-color);
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.image-preview {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    margin-left: 15px;
+    background: center / 50% no-repeat var(--image-bg) url("../icons/lock.svg");
+}
+
+.image-preview img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+}
+
+.image-preview img.foreground-image {
+    object-fit: contain;
+    filter: none;
+}
+
+.view-count {
+    width: auto;
+    border-radius: 10px;
+    color: var(--light-text);
+    background-color: var(--view-bg);
+    display: flex;
+    gap: 5px;
+    padding: 8px;
+    align-items: center;
+}
+
+.view-icon {
+    width: 20px;
+    height: 20px;
+    background: center / contain no-repeat url("../icons/view.svg");
+}
+
+@media (max-width: 760px) {
+    header h1 {
+        display: none;
+    }
+    
+    header {
+        justify-content: center;
+    }
+}

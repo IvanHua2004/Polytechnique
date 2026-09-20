@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combien de Temps pour Lire - Accueil</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">Combien de Temps pour Lire</a>
+      <form method="GET" class="search-container">
+        <input type="search" id="search" name="q" placeholder="Rechercher un livre ou un auteur">
+      </form>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="add.html">Ajouter</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="filters rounded-shadow">
+      <form class="filter-form">
+        <div class="filter-group">
+          <label for="max-time">Durée maximale</label>
+          <input type="range" id="max-time" name="max-time" min="1" max="50" value="20">
+          <span id="time-display">20 heures</span>
+        </div>
+        <div class="filter-group">
+          <label for="genre">Genre</label>
+          <select id="genre" name="genre">
+            <option value="all">Tous les genres</option>
+            <option value="fiction">Fiction</option>
+            <option value="science-fiction">Science-fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="historique">Historique</option>
+          </select>
+        </div>
+      </form>
+    </section>
+
+    <section class="book-grid">
+      <article class="book-card rounded-shadow">
+        <img src="images/pprince.jpeg" alt="Couverture du Petit Prince">
+        <div class="book-info">
+          <a href="book.html?id=1" class="book-title"><strong>Le Petit Prince</strong></a>
+          <p class="book-author">Antoine de Saint-Exupéry</p>
+          <div class="book-genre">Fiction</div>
+          <p class="reading-time">2h 30m</p>
+        </div>
+      </article>
+
+      <article class="book-card rounded-shadow">
+        <img src="images/mis.jpeg" alt="Couverture des Misérables">
+        <div class="book-info">
+          <a href="book.html?id=2" class="book-title"><strong>Les Misérables</strong></a>
+          <p class="book-author">Victor Hugo</p>
+          <div class="book-genre">Historique</div>
+          <p class="reading-time">18h 45m</p>
+        </div>
+      </article>
+
+      <article class="book-card rounded-shadow">
+        <img src="images/mnil.jpg" alt="Couverture de Mort sur le Nil">
+        <div class="book-info">
+          <a href="book.html?id=3" class="book-title"><strong>Mort sur le Nil</strong></a>
+          <p class="book-author">Agatha Christie</p>
+          <div class="book-genre">Mystère</div>
+          <p class="reading-time">12h 15m</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Combien de Temps pour Lire |
+      Projet réalisé par
+      <span id="etudiant-1">Kevin Cohen, 2282477</span> et
+      <span id="etudiant-2">Ivan Hua, 2400805</span>
+    </p>
+  </footer>
+
+  <script>
+    const timeSlider = document.getElementById('max-time');
+    const timeDisplay = document.getElementById('time-display');
+    const genreSelect = document.getElementById('genre');
+    const bookCards = document.querySelectorAll('.book-card');
+    const searchInput = document.querySelector('input[type="search"]');
+
+    // Récupérer le paramètre de recherche depuis l'URL si présent
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('q') || '';
+
+    // Initialiser la barre de recherche avec la valeur de l'URL
+    if (searchInput && searchQuery) {
+      searchInput.value = searchQuery;
+    }
+
+    // Fonction pour convertir le format de temps (2h 30m) en minutes
+    function timeToMinutes(timeStr) {
+      const hourMatch = timeStr.match(/(\d+)h/);
+      const minMatch = timeStr.match(/(\d+)m/);
+
+      const hours = hourMatch ? parseInt(hourMatch[1]) : 0;
+      const minutes = minMatch ? parseInt(minMatch[1]) : 0;
+
+      return hours * 60 + minutes;
+    }
+
+    // Fonction pour filtrer les livres
+    function filterBooks() {
+      const maxTimeHours = parseInt(timeSlider.value);
+      const maxTimeMinutes = maxTimeHours * 60;
+      const selectedGenre = genreSelect.value;
+      const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+
+      bookCards.forEach(card => {
+        const timeElement = card.querySelector('.reading-time');
+        const genreElement = card.querySelector('.book-genre');
+        const titleElement = card.querySelector('.book-title');
+        const authorElement = card.querySelector('.book-author');
+
+        if (!timeElement || !genreElement) return;
+
+        const bookTimeMinutes = timeToMinutes(timeElement.textContent);
+        const bookGenre = genreElement.textContent;
+        const bookTitle = titleElement ? titleElement.textContent.toLowerCase() : '';
+        const bookAuthor = authorElement ? authorElement.textContent.toLowerCase() : '';
+
+        const matchesTime = bookTimeMinutes <= maxTimeMinutes;
+        const matchesGenre = selectedGenre === 'all' || bookGenre.toLowerCase() === selectedGenre;
+        const matchesSearch = searchTerm === '' ||
+          bookTitle.includes(searchTerm) ||
+          bookAuthor.includes(searchTerm);
+
+        if (matchesTime && matchesGenre && matchesSearch) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Mise à jour de l'affichage du temps
+    if (timeSlider && timeDisplay) {
+      timeSlider.addEventListener('input', () => {
+        timeDisplay.textContent = timeSlider.value + ' heures';
+        filterBooks();
+      });
+    }
+
+    // Filtrage par genre
+    if (genreSelect) {
+      genreSelect.addEventListener('change', filterBooks);
+    }
+
+    // Filtrage par recherche (sans soumettre le formulaire)
+    if (searchInput) {
+      searchInput.addEventListener('input', filterBooks);
+    }
+
+    // Filtrage initial
+    filterBooks();
+  </script>
+</body>
+
+</html>

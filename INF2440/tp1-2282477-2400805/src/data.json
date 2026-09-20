@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Le Petit Prince",
+        "author": "Antoine de Saint-Exupéry",
+        "genre": "Fiction",
+        "readingTime": 150,
+        "image": "images/pprince.jpeg",
+        "pages": 96,
+        "summary": "Un aviateur échoué dans le désert du Sahara rencontre un petit prince venu d'une autre planète. Une histoire poétique et philosophique sur l'amitié, l'amour et la nature humaine. Ce conte intemporel explore les thèmes de l'enfance, de l'amitié et de la critique de la société adulte à travers les yeux innocents d'un enfant venu d'ailleurs.",
+        "comments":[
+            {
+                "format": "paper",
+                "time": 135,
+                "date":"2025-09-15",
+                "text":"Une lecture magnifique et émouvante. J'ai pris mon temps pour savourer chaque page et réfléchir aux messages profonds de l'histoire."
+            },
+            {
+                "format": "electronic",
+                "time": 165,
+                "date":"2022-03-12",
+                "text":"Lu sur ma liseuse pendant un voyage en train. Parfait pour une lecture en déplacement, même si j'aurais préféré avoir le livre physique."
+            }
+        ],
+        "id": 1
+    },
+    {
+        "title": "Les Misérables",
+        "author": "Victor Hugo",
+        "genre": "Historique",
+        "readingTime": 1125,
+        "image": "images/mis.jpeg",
+        "pages": 1232,
+        "id": 2
+    },
+    {
+        "title": "Mort sur le Nil",
+        "author": "Agatha Christie",
+        "genre": "Mystère",
+        "readingTime": 735,
+        "image": "images/mnil.jpg",
+        "pages": 320,
+        "id": 3
+    }
+]

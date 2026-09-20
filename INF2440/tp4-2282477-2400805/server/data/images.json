@@ -1,0 +1,35 @@
+[
+    {
+        "id": "d6cf6ad1-dadc-4379-ab62-c542aca81f3d",
+        "title": "Paysage",
+        "filename": "d6cf6ad1-dadc-4379-ab62-c542aca81f3d_paysage.jpg",
+        "secretCode": "TB61ZK",
+        "status": "public",
+        "createdAt": "2025-10-27T12:02:42.432Z",
+        "views": 5,
+        "maxViews": null,
+        "immediateDelete": false
+    },
+    {
+        "id": "508e7cd5-8f48-4176-9a5d-6562b67b6ddf",
+        "title": "Chat",
+        "filename": "508e7cd5-8f48-4176-9a5d-6562b67b6ddf_cat.jpg",
+        "secretCode": "M52VUJ",
+        "status": "public",
+        "createdAt": "2025-10-27T12:03:04.400Z",
+        "views": 1,
+        "maxViews": 8,
+        "immediateDelete": false
+    },
+    {
+        "id": "293cbeae-8297-4cb4-9c5c-bb8c9b03e5d7",
+        "title": "Voiture",
+        "filename": "293cbeae-8297-4cb4-9c5c-bb8c9b03e5d7_car.jpg",
+        "secretCode": "MG7IJT",
+        "status": "private",
+        "createdAt": "2025-10-27T12:03:27.732Z",
+        "views": 2,
+        "maxViews": 10,
+        "immediateDelete": true
+    }
+]

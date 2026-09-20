@@ -1,0 +1,30 @@
+{
+  "name": "20253-tp2",
+  "version": "1.0.0",
+  "description": "TP2 du cours LOG2440",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "http-server -p 3000 -c-1 -o ./src",
+    "lint": "eslint ./",
+    "test:unit": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --verbose",
+    "test:books": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --verbose ./tests/books.test.js",
+    "vite": "vite",
+    "build": "vite build",
+    "deploy": "npm run build && http-server -p 3000 -c-1 -o ./dist"
+  },
+  "author": "LOG2440",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "cross-env": "7.0.3",
+    "eslint": "^9.29.0",
+    "eslint-plugin-jest": "^29.0.1",
+    "globals": "^16.2.0",
+    "jest": "^30.0.3",
+    "vite": "^7.1.9"
+  }
+}

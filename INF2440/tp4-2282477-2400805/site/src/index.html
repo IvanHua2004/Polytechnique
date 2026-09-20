@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyImages - Explorer</title>
+    <link rel="icon shortcut" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="stylesheet" href="assets/css/shared.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script type="module" src="assets/js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>PolyImages&ensp;&ndash;&ensp;Explorer</h1>
+        <a href="/">
+            <div class="explore-icon"></div>Explorer
+        </a>
+        <a href="publish">
+            <div class="publish-icon"></div>Publier
+        </a>
+    </header>
+    <main>
+        <section class="error-section">
+            <p>Erreur lors de la requête avec le serveur :</p>
+            <p id="error-message"></p>
+        </section>
+        <section class="noimage-section">
+            <div class="sad-icon"></div>
+            <p>Il n'y a aucune image à explorer</p>
+        </section>
+        <section class="images-section" id="images-section">
+        </section>
+    </main>
+</body>
+
+</html>

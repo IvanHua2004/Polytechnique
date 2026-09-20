@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Petit Prince - Combien de Temps pour Lire</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/book.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">Combien de Temps pour Lire</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="add.html">Ajouter</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="book-detail">
+      <img class="book-cover" src="images/pprince.jpeg" alt="Couverture du livre Le Petit Prince">
+      <div class="book-details rounded-shadow">
+        <h1>Le Petit Prince</h1>
+        <div class="book-info">
+          <div class="book-info-item">
+            <span class="book-info-label">Auteur</span>
+            <span class="book-info-value">Antoine de Saint-Exupéry</span>
+          </div>
+          <div class="book-info-item">
+            <span class="book-info-label">Genre</span>
+            <span class="book-info-value">Fiction</span>
+          </div>
+          <div class="book-info-item">
+            <span class="book-info-label">Pages</span>
+            <span class="book-info-value">96 pages</span>
+          </div>
+          <div class="book-info-item">
+            <span class="book-info-label">Temps moyen</span>
+            <span class="book-info-value">02:30</span>
+          </div>
+        </div>
+        <p>
+          Un aviateur échoué dans le désert du Sahara rencontre un petit prince venu d'une autre planète. Une histoire
+          poétique et philosophique sur l'amitié, l'amour et la nature humaine. Ce conte intemporel explore les thèmes
+          de l'enfance, de l'amitié et de la critique de la société adulte à travers les yeux innocents d'un enfant venu
+          d'ailleurs.
+        </p>
+      </div>
+    </section>
+
+    <section class="submissions rounded-shadow">
+      <h2>Temps de lecture soumis</h2>
+      <div class="submission-item">
+        <div class="submission-header">
+          <span class="submission-time">2h 15min</span>
+          <span class="submission-format">Papier</span>
+          <span class="submission-date">15 septembre 2025</span>
+        </div>
+        <p><em>Une lecture magnifique et émouvante. J'ai pris mon temps pour savourer chaque page et réfléchir aux
+            messages profonds de l'histoire.</em></p>
+      </div>
+
+      <div class="submission-item">
+        <div class="submission-header">
+          <span class="submission-time">2h 45min</span>
+          <span class="submission-format">Électronique</span>
+          <span class="submission-date">12 mars 2022</span>
+        </div>
+        <p><em>Lu sur ma liseuse pendant un voyage en train. Parfait pour une lecture en déplacement, même si j'aurais
+            préféré avoir le livre physique.</em></p>
+      </div>
+    </section>
+
+    <section class="form-section rounded-shadow">
+      <h2>Soumettre votre temps de lecture</h2>
+      <form method="POST">
+        <div class="time-inputs">
+          <div class="form-group">
+            <label for="hours">Heures</label>
+            <input type="number" id="hours" name="hours" min="0" max="100" required>
+          </div>
+          <div class="form-group">
+            <label for="minutes">Minutes</label>
+            <input type="number" id="minutes" name="minutes" min="0" max="59" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Format de lecture</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="format" value="paper" required> Papier
+            </label>
+            <label>
+              <input type="radio" name="format" value="electronic" required> Électronique
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comment">Commentaire (optionnel)</label>
+          <textarea id="comment" name="comment" placeholder="Partagez votre expérience de lecture..."></textarea>
+        </div>
+        <button type="submit" class="submit-button">Soumettre</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Combien de Temps pour Lire |
+      Projet réalisé par
+      <span id="etudiant-1">Kevin Cohen, 2282477</span> et
+      <span id="etudiant-2">Ivan Hua, 2400805</span>
+    </p>
+  </footer>
+</body>
+
+</html>
+
+</html>

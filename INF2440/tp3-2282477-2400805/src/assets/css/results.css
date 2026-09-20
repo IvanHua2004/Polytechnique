@@ -1,0 +1,53 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+td,
+th {
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 18px;
+}
+
+fieldset {
+  padding-left: 50px;
+}
+
+fieldset > legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#delete-score-btn,
+#avg-score-btn {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+#delete-score-btn {
+  background-color: rgb(134, 39, 39);
+}

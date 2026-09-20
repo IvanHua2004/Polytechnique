@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolyBiblio</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script type="module" src="./assets/index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>PolyBiblio</h1>
+  </header>
+  <main id="content">
+    <section i="left-column">
+
+      <form id="add-form">
+        <h2>Ajouter un livre</h2>
+        <label>Titre : <input id="title" placeholder="The Rust Programming Language" required type="text"> </label>
+        <label>Auteur : <input id="author" placeholder="Carol Nichols" required type="text"> </label>
+        <label>ISBN : <input id="isbn" placeholder="9781593278281" required type="number"> </label>
+        <label>Note (0-5) : <input id="rating" placeholder="4.7" type="number" min="0" max="5" step="0.1">
+        </label>
+        <div class="flex-space-between">
+          Format :
+          <select id="ebook-type">
+            <option value="PDF">PDF</option>
+            <option value="EPUB">EPUB</option>
+            <option value="MOBI">MOBI</option>
+          </select>
+        </div>
+        <button id="add-book" type="submit">Ajouter</button>
+      </form>
+
+      <div>
+        <h2>Livres</h2>
+        <div class="sort-controls">
+          <label>Trier par :
+            <select id="sort-criteria">
+              <option value="title">Titre</option>
+              <option value="author">Auteur</option>
+              <option value="rating">Note</option>
+            </select>
+          </label>
+          <button id="sort-btn">Trier (↑)</button>
+        </div>
+        <ul id="book-list"></ul>
+        <p> Moyenne : <span id="avg-rating"></span></p>
+      </div>
+    </section>
+
+    <section id="right-column">
+      <section>
+        <h2> Rechercher par auteur</h2>
+        <input id="author-search" placeholder="Auteur" class="full-width">
+        <label id="exact-match-label">Match exact
+          <input type="checkbox" id="exact-match">
+        </label>
+        <button id="search-author-btn">Chercher</button>
+        <p id="author-search-result"></p>
+      </section>
+
+      <section id="utils">
+        <h2>Utilisation des utilitaires</h2>
+        <section>
+          <label>min : <input id="min-rating" type="number" min="0" max="5" step="0.1" value="0"></label>
+          <label>max : <input id="max-rating" type="number" min="0" max="5" step="0.1" value="5"></label>
+          <button id="filter-btn">Filtrer</button>
+        </section>
+        <button id="strat-stars">Notes avec étoiles</button>
+        <button id="strat-numbers">Notes avec chiffres</button>
+        <div id="strat-output"></div>
+      </section>
+    </section>
+  </main>
+
+</body>
+
+</html>

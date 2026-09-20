@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyImages - Publier</title>
+    <link rel="icon shortcut" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="stylesheet" href="assets/css/shared.css">
+    <link rel="stylesheet" href="assets/css/publish.css">
+    <script type="module" src="assets/js/publish.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>PolyImages&ensp;&ndash;&ensp;Publier</h1>
+        <a href="/">
+            <div class="explore-icon"></div>
+            Explorer
+        </a>
+        <a href="publish">
+            <div class="publish-icon"></div>
+            Publier
+        </a>
+    </header>
+    <main>
+        <section class="error-section">
+            <p>Erreur lors de la requête avec le serveur :</p>
+            <p id="error-message"></p>
+        </section>
+        <section class="success-section">
+            <p>L'image a été publiée avec succès!</p>
+            <p>Le code secret de l'image est : <span id="code">asdasd</span></p>
+        </section>
+        <section class="form-section">
+            <form id="publish-form">
+                <label for="title">Titre</label>
+                <input name="title" id="title" type="text" minlength="1" maxlength="50" placeholder="Entrez un titre..." required>
+                <label for="image">Image</label>
+                <input name="image" id="image" type="file" accept="image/*" required>
+
+                <p>Visibilité</p>
+                <div>
+                    <input type="radio" id="public" name="status" value="public" checked>
+                    <label for="public">Publique</label>
+                </div>
+                <div>
+                    <input type="radio" id="private" name="status" value="private">
+                    <label for="private">Privée</label>
+                </div>
+
+                <div class="has-max-section">
+                    <input type="checkbox" id="has-max" name="has-max">
+                    <label for="has-max">Définir un nombre maximum de vues</label>
+                </div>
+
+                <label for="max-views" class="max-views-label">Nombre maximum de vues</label>
+                <input name="max-views" id="max-views" type="number" min="1" max="999" placeholder="Entrez le nombre maximum de vues..." disabled>
+
+                <p class="max-views-label">Action lorsque le nombre maximum de vues est atteint</p>
+                <div>
+                    <input type="radio" id="delete-action" name="action" value="delete-action" class="max-views-radio" checked disabled>
+                    <label for="delete-action" class="max-views-label">Suppression de l'image</label>
+                </div>
+                <div>
+                    <input type="radio" id="private-action" name="action" value="private-action" class="max-views-radio private-radio" disabled>
+                    <label for="private-action" class="max-views-label private-label">Privatisation de l'image</label>
+                </div>
+
+                <button type="submit">
+                    <div class="submit-text">Publier</div>
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

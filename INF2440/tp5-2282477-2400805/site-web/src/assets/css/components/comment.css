@@ -1,0 +1,40 @@
+.comment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid var(--border-color);
+    margin-bottom: 5px;
+    width: 75%;
+}
+
+
+.comment-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comment-author {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--author-color);
+}
+
+.comment-date {
+    font-size: 1em;
+    font-style: italic;
+    color: var(--date-color);
+}
+
+.comment-content {
+    font-size: 1.1em;
+    text-align: start;
+    padding-left: 30px;
+    padding-right: 250px;
+}

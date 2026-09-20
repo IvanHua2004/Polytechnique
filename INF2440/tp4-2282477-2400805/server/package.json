@@ -1,0 +1,30 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "Serveur du TP4 de LOG2440",
+    "author": "LOG2440",
+    "license": "ISC",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --ignore ./data/ ./index.js",
+        "test": "jest --detectOpenHandles --verbose",
+        "lint": "eslint ./",
+        "lint:fix": "npm run lint -- --fix"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^5.1.0",
+        "express-fileupload": "^1.5.2",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.38.0",
+        "eslint": "^9.38.0",
+        "eslint-plugin-jest": "^29.0.1",
+        "globals": "^16.4.0",
+        "jest": "^30.2.0",
+        "nodemon": "^3.1.10",
+        "supertest": "^7.1.4"
+    }
+}

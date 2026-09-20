@@ -1,0 +1,5 @@
+{
+    "gameSize": "4x3",
+    "cardType": "numbers",
+    "maxAttempts": 4
+}

@@ -1,0 +1,10 @@
+const DB_DB = "TP5";
+const DB_COLLECTION_POSTS = "POSTS";
+const DB_COLLECTION_USERS = "USERS";
+
+const DB_URL = "mongodb://127.0.0.1:27017";
+
+exports.DB_DB = DB_DB;
+exports.DB_COLLECTION_POSTS = DB_COLLECTION_POSTS;
+exports.DB_COLLECTION_USERS = DB_COLLECTION_USERS;
+exports.DB_URL = DB_URL;

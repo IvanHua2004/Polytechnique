@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyImages - Image</title>
+    <link rel="icon shortcut" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="stylesheet" href="assets/css/shared.css">
+    <link rel="stylesheet" href="assets/css/image.css">
+    <script type="module" src="assets/js/image.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>PolyImages&ensp;&ndash;&ensp;Image</h1>
+        <a href="/"><div class="explore-icon"></div>Explorer</a>
+        <a href="publish"><div class="publish-icon"></div>Publier</a>
+    </header>
+    <main>
+        <section class="info-section">
+            <p id="info-message"></p>
+        </section>
+        <section class="error-section">
+            <p>Erreur lors de la requête avec le serveur :</p>
+            <p id="error-message"></p>
+        </section>
+        <section class="private-section">
+            <form id="private-form">
+                <p>Cette image est privée</p>
+                <label for="code">Veuillez entrer le code secret :</label>
+                <input name="code" id="code" type="text" minlength="1" maxlength="50" placeholder="Entrez le code secret..." required>
+
+                <button type="submit">
+                    <div class="submit-text">Accéder</div>
+                </button>
+            </form>
+        </section>
+        <section class="image-section">
+            <div class="title" id="image-title"></div>
+            <div class="date" id="image-date"></div>
+            <div class="image-preview">
+                <img id="image-display-1">
+                <img id="image-display-2" class="foreground-image">
+                <div id="view-count" class="view-count"><div class="view-icon"></div></div>
+            </div>
+            <div class="image-info">
+                <div class="image-text">
+                    <div>Visibilité :</div>
+                    <div id="image-visibility"></div>
+                </div>
+                <div class="image-text image-action">
+                    <div>Action :</div>
+                    <div id="image-action"></div></div>
+                </div>
+            </div>
+            <form id="edit-form">
+                <div class="title">Modifier l'image</div>
+                <label for="edit-code" class="code-input">Entrer le code secret de l'image</label>
+                <input name="edit-code" id="edit-code" class="code-input" type="text" minlength="1" maxlength="50" placeholder="Entrez le code secret..." required>
+
+                <label for="title">Modifier le titre (optionnel)</label>
+                <input name="title" id="title" type="text" minlength="1" maxlength="50" placeholder="Entrez un nouveau titre...">
+                
+                <label for="max-views" class="max-views-label">Changer le nombre maximum de vues (optionnel)</label>
+                <p>Entrer 0 vues pour retirer le maximum de vues</p>
+                <input name="max-views" id="max-views" type="number" min="0" max="999" placeholder="Entrez un nombre maximum de vues...">
+
+                <div>
+                    <input type="checkbox" id="visibility" name="visibility">
+                    <label for="visibility">Changer la visibilité à <span id="visibility-edit"></span> (optionnel)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="action" name="action">
+                    <label for="action">Changer l'action à <span id="action-edit"></span> (optionnel)</label>
+                </div>
+
+                <button type="submit">
+                    <div class="submit-text">Modifier l'image</div>
+                </button>
+
+                <button type="submit" id="delete-button">
+                    <div class="submit-text">Supprimer l'image</div>
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

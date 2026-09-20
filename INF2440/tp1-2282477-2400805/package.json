@@ -1,0 +1,22 @@
+{
+  "name": "log2440-tp1",
+  "version": "1.0.0",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "http-server -p 3000 -c-1 -o src/index.html",
+    "test": "cypress open",
+    "test:headless": "cypress run --browser chrome",
+    "test:intro": "cypress run --browser chrome --spec cypress/e2e/intro.cy.js"
+  },
+  "author": "LOG2440",
+  "license": "ISC",
+  "description": "Travail pratique #1 du cours LOG2440 basé sur les notions de HTML et CSS",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "cypress": "^14.5.2"
+  }
+}

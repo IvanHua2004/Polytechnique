@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolyJeu - Jeu</title>
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/game.css">
+  <script src="assets/js/game.js" defer type="module"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="nav-title">PolyJeu</h1>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Configuration</a>
+        </li>
+        <li class="nav-item">
+          <a href="game.html" class="nav-link active">Jeu</a>
+        </li>
+        <li class="nav-item">
+          <a href="results.html" class="nav-link">Résultats</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="main-content">
+    <div class="container">
+      <h2>Jeu de Mémoire</h2>
+      <div>
+        <p id="game-info">Nombre d'essais restants: <span id="remain-attempts"></span></p>
+      </div>
+      <div id="game-board">
+        <!-- Le plateau de jeu sera généré ici -->
+        <div class="game-card-content" data-hidden="true" data-index="0">
+          <div class="game-card-front"></div>
+          <div class="game-card-back">A</div>
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>

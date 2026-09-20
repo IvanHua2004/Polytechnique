@@ -1,0 +1,118 @@
+.search-container {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 2rem;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Filtres TODO : Compléter le CSS au besoin*/
+
+.filters {
+    margin: 0 auto 2rem auto;
+    width: fit-content;
+}
+
+.filter-form {
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#max-time {
+    accent-color: var(--accent);
+}
+
+/* Books */
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.book-card {
+    padding: 0rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    width: 150px;
+    height: 175px;
+}
+
+.book-genre {
+    background: var(--genre-background);
+    color: var(--genre);
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.reading-time {
+    font-weight: bold;
+    color: var(--time);
+    margin-left: auto;
+    margin-top: auto;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-card {
+        justify-content: center;
+    }
+
+    .book-info .book-author,
+    .book-info .book-genre,
+    .book-info .reading-time {
+        display: none;
+    }
+
+    .book-title {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+    .search-container {
+        display: none;
+    }
+}

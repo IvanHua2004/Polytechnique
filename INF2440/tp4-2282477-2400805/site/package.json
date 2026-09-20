@@ -1,0 +1,21 @@
+{
+    "name": "site",
+    "version": "1.0.0",
+    "description": "Site Web du TP4 de LOG2440",
+    "author": "LOG2440",
+    "license": "ISC",
+    "main": "index.js",
+    "scripts": {
+        "start": "http-server ./src -a localhost -p 3000 -c-1 -o .",
+        "lint": "eslint ./src/**/*.js",
+        "lint:fix": "npm run lint -- --fix"
+    },
+    "dependencies": {
+        "globals": "^16.4.0",
+        "http-server": "^14.1.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.38.0",
+        "eslint": "^9.38.0"
+    }
+}

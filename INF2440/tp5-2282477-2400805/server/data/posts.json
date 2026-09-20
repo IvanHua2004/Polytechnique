@@ -1,0 +1,110 @@
+{
+    "posts": [
+        {
+            "id": "12ab",
+            "title": "Comment bien démarrer avec MongoDB Atlas",
+            "content": "Un tutoriel étape par étape pour configurer gratuitement une base MongoDB Atlas.",
+            "author": "Alice",
+            "category": "Ressources",
+            "reactions": 15,
+            "comments": [
+                {
+                    "id": "1",
+                    "author": "Steve",
+                    "content": "Ça ne m'a pas trop aidé.",
+                    "reactions": 0,
+                    "date": "2025-10-03T14:00:00Z"
+                }
+            ],
+            "date": "2025-10-05T10:00:00Z"
+            },
+            {
+            "id": "23cd",
+            "title": "Ressources gratuites pour apprendre React",
+            "content": "Voici une compilation de sites et vidéos pour progresser rapidement avec React.",
+            "author": "Bob",
+            "category": "Ressources",
+            "reactions": 8,
+            "comments": [],
+            "date": "2025-10-05T11:00:00Z"
+            },
+            {
+            "id": "34ef",
+            "title": "MongoDB vs PostgreSQL : votre choix ?",
+            "content": "Pour un projet web avec beaucoup de lecture, vous privilégiez quoi et pourquoi ?",
+            "author": "Emma",
+            "category": "Débats",
+            "reactions": 9,
+            "comments": [
+                 {
+                    "id": "2",
+                    "author": "Alice",
+                    "content": "MongoDB est top pour la flexibilité, surtout en prototypage rapide. Mais si le modèle est stable, je migre souvent vers Postgres ensuite.",
+                    "reactions": 3,
+                    "date": "2025-10-05T14:50:00Z"
+                }
+            ],
+            "date": "2025-10-05T14:20:00Z"
+            },
+            {
+            "id": "45gh",
+            "title": "Les IA vont-elles remplacer les devs ?",
+            "content": "Comment voyez-vous l'évolution des métiers de dev dans 5 ans ?",
+            "author": "Frank",
+            "category": "Débats",
+            "reactions": 17,
+            "comments": [],
+            "date": "2025-10-05T15:00:00Z"
+            },
+            {
+            "id": "56ij",
+            "title": "Todo-list animée en React",
+            "content": "J'ai ajouté des transitions et animations CSS, dites-moi ce que vous en pensez !",
+            "author": "Bob",
+            "category": "Projets",
+            "reactions": 12,
+            "comments": [
+                {
+                    "id": "1",
+                    "author": "Alice",
+                    "content": "L'interface est simple et agréable, bon travail !",
+                    "reactions": 4,
+                    "date": "2025-10-05T20:15:00Z"
+                },
+                {
+                    "id": "2",
+                    "author": "Robert",
+                    "content": "Il y a des bugs dans ton affichage...",
+                    "reactions": -1,
+                    "date": "2025-10-05T20:25:00Z"
+                },
+                {
+                    "id": "3",
+                    "author": "Charlie",
+                    "content": "J’adore ! Très pratique pour les projets front-end.",
+                    "reactions": 3,
+                    "date": "2025-10-05T20:40:00Z"
+                }
+            ],
+            "date": "2025-10-05T17:30:00Z"
+            },
+            {
+            "id": "67kl",
+            "title": "Application météo en React",
+            "content": "Je viens de terminer une petite application météo qui affiche les prévisions en temps réel grâce à une API externe. N'hésitez pas à me donner vos retours sur l'interface ou le code !",
+            "author": "Sophie",
+            "category": "Projets",
+            "reactions": 7,
+            "comments": [
+                  {
+                    "id": "1",
+                    "author": "Mathilde",
+                    "content": "Tu utilise des approches intéréssantes.",
+                    "reactions": 3,
+                    "date": "2025-10-05T20:15:00Z"
+                }
+            ],
+            "date": "2025-10-05T19:30:00Z"
+        }
+    ]
+}

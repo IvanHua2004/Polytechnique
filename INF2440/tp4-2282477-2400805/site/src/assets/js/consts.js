@@ -1,0 +1,15 @@
+const SERVER_URL = "http://localhost:5020";
+
+const HTTP_STATUS = {
+    SUCCESS: 200,
+    CREATED: 201,
+    NO_CONTENT: 204,
+    REDIRECT: 302,
+    BAD_REQUEST: 400,
+    UNAUTHORIZED: 401,
+    FORBIDDEN: 403,
+    NOT_FOUND: 404,
+    INTERNAL_SERVER_ERROR: 500
+};
+
+export { SERVER_URL, HTTP_STATUS };

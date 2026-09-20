@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combien de Temps pour Lire - Ajout</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/add.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">Combien de Temps pour Lire</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="add.html" class="active">Ajouter</a></li>
+          <li><a href="about.html">À propos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="submission-layout">
+      <section class="form-section">
+        <h2>Soumettre un nouveau livre</h2>
+        <!-- TODO : Compléter le formulaire -->
+        <form method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="title">Titre du livre</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+          <div class="form-group">
+            <label for="author">Auteur</label>
+            <input type="text" id="author" name="author" minlength="3" required>
+          </div>
+          <div class="form-group">
+            <label for="genre">Genre</label>
+            <select id="genre" name="genre" required>
+              <option value="">Sélectionnez un genre</option>
+              <option value="fiction">Fiction</option>
+              <option value="sci-fi">Science-fiction</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="historical">Historique</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pages">Nombre de pages</label>
+            <input type="number" id="pages" name="pages" min="1" required>
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Décrivez brièvement le livre..."
+              required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="cover-image">Image de couverture</label>
+            <input type="file" id="cover-image" name="cover" accept="image/*" required>
+          </div>
+          <button type="submit" class="submit-button">Soumettre le livre</button>
+        </form>
+      </section>
+      <section class="image-preview">
+        <h2>Aperçu de la couverture</h2>
+        <img id="image-preview" src="images/mis.jpeg" alt="Aperçu de la couverture du livre">
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Combien de Temps pour Lire |
+      Projet réalisé par
+      <span id="etudiant-1">Kevin Cohen, 2282477</span> et
+      <span id="etudiant-2">Ivan Hua, 2400805</span>
+    </p>
+  </footer>
+
+  <script>
+    // Bonus functionality: Update image preview when a file is selected
+    document.getElementById('cover-image').addEventListener('change', function (event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById('image-preview').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+
+</html>

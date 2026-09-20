@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PolyJeu - Configuration</title>
+  <link rel="stylesheet" href="assets/css/shared.css" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <script src="assets/js/index.js" defer type="module"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="nav-title">PolyJeu</h1>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Configuration</a>
+        </li>
+        <li class="nav-item">
+          <a href="game.html" class="nav-link">Jeu</a>
+        </li>
+        <li class="nav-item">
+          <a href="results.html" class="nav-link">Résultats</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="container">
+      <h2>Configuration du Jeu de Mémoire</h2>
+      <form id="game-config-form" class="config-form">
+        <div class="form-group">
+          <label for="game-size">Taille du jeu :</label>
+          <select id="game-size" name="gameSize" required>
+            <option value="" selected>Choisir une taille</option>
+            <option value="2x2">2x2 (4 cartes)</option>
+            <option value="3x2">3x2 (6 cartes)</option>
+            <option value="4x3">4x3 (12 cartes)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Type de cartes :</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" id="card-numbers" name="cardType" value="numbers" checked required />
+              <span class="radio-text">Chiffres</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" id="card-letters" name="cardType" value="letters" required />
+              <span class="radio-text">Lettres</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="max-attempts">Nombre maximum de mauvaises tentatives :</label>
+          <input type="number" id="max-attempts" name="maxAttempts" min="0" max="50" value="10" required />
+        </div>
+        <div class="form-group">
+          <button type="submit" id="start-game-btn" class="btn btn-primary">
+            Démarrer le Jeu
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "types": [
+            "cypress"
+        ]
+    },
+    "include": [
+        "cypress/**/*.js",
+        "tests/jest/**/*.js",
+        "node_modules/cypress"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

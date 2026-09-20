@@ -1,0 +1,21 @@
+.submission-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#image-preview {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-section h2,
+.image-preview h2 {
+    margin-bottom: 1.5rem;
+}
+
+.image-preview {
+    text-align: center;
+}
