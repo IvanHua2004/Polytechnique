@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\yogio\OneDrive\Desktop\TP1\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1096390543.index
+542094340.index
+1429947695.index

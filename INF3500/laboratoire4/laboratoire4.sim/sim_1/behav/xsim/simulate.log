@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+Note: Sortie calculee = 1
+Time: 125 ns  Iteration: 0  Process: /PolyRISC_tb/test  File: C:/Users/yogio/OneDrive/Desktop/INF3500/labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd
+Note: Sortie calculee = 3
+Time: 240 ns  Iteration: 0  Process: /PolyRISC_tb/test  File: C:/Users/yogio/OneDrive/Desktop/INF3500/labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd
+Note: Sortie calculee = 6
+Time: 365 ns  Iteration: 0  Process: /PolyRISC_tb/test  File: C:/Users/yogio/OneDrive/Desktop/INF3500/labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd
+Note: Sortie calculee = 10
+Time: 480 ns  Iteration: 0  Process: /PolyRISC_tb/test  File: C:/Users/yogio/OneDrive/Desktop/INF3500/labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd
+Note: Sortie calculee = 15
+Time: 605 ns  Iteration: 0  Process: /PolyRISC_tb/test  File: C:/Users/yogio/OneDrive/Desktop/INF3500/labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd
+Note: Sortie calculee = 21
+Time: 720 ns  Iteration: 0  Process: /PolyRISC_tb/test  File: C:/Users/yogio/OneDrive/Desktop/INF3500/labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd
+Failure: Fin
+Time: 720 ns  Iteration: 0  Process: /PolyRISC_tb/test  File: C:/Users/yogio/OneDrive/Desktop/INF3500/labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd
+$finish called at time : 720 ns : File "C:/Users/yogio/OneDrive/Desktop/INF3500/labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd" Line 141

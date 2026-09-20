@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yogio/OneDrive/Desktop/INF3500/labo-1-beaurel-2164587_2393842/src/code_barre.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'code_barre'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yogio/OneDrive/Desktop/INF3500/labo-1-beaurel-2164587_2393842/src/code_barre_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'code_barre_tb'

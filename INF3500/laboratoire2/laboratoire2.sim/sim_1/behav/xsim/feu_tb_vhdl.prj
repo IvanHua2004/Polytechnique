@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../../labo-2-ma-2164587_2393842/src/feu.vhd" \
+"../../../../../labo-2-ma-2164587_2393842/src/feu_tb.vhd" \
+
+# Do not sort compile order
+nosort

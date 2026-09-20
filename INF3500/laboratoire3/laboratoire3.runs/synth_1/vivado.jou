@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Nov  3 19:57:04 2025
+# Process ID         : 15880
+# Current directory  : C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/top.vds
+# Journal file       : C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1\vivado.jou
+# Running On         : Ivan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700KF
+# CPU Frequency      : 3610 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 51343 MB
+# Swap memory        : 3221 MB
+# Total Virtual      : 54565 MB
+# Available Virtual  : 34467 MB
+#-----------------------------------------------------------
+source top.tcl -notrace

@@ -1,0 +1,19 @@
+{
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.parquet": "duckdb.dataFileViewer",
+    "*.csv": "duckdb.dataFileViewer",
+    "*.tsv": "duckdb.dataFileViewer",
+    "*.xlsx": "duckdb.dataFileViewer"
+  },
+  "duckdb.databases": [
+    {
+      "alias": "pokedex",
+      "type": "file",
+      "path": "c:\\Users\\yogio\\OneDrive\\Desktop\\INF3710\\TP1\\pokedex.duckdb",
+      "readOnly": true,
+      "attached": true
+    }
+  ],
+  "duckdb.defaultDatabase": "pokedex"
+}

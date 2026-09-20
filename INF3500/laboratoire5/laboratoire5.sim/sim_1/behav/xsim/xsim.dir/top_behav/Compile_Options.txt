@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "proc_sys_reset_v5_0_17" -L "axi_datamover_v5_1_37" -L "axi_sg_v4_1_21" -L "axi_dma_v7_1_36" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "top_behav" "xil_defaultlib.top" "xil_defaultlib.glbl" -log "elaborate.log" 

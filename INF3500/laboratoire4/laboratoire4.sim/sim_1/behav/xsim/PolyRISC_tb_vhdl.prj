@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../../labo-4-ma-2164587_2393842/src/PolyRISC_utils_pkg.vhd" \
+"../../../../../labo-4-ma-2164587_2393842/src/PolyRISC_v2.vhd" \
+"../../../../../labo-4-ma-2164587_2393842/src/PolyRISC_tb.vhd" \
+
+# Do not sort compile order
+nosort

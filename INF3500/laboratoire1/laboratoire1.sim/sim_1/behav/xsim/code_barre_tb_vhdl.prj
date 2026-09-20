@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../../labo-1-beaurel-2164587_2393842/src/utilitaires_inf3500_pkg.vhd" \
+"../../../../../labo-1-beaurel-2164587_2393842/src/code_barre.vhd" \
+"../../../../../labo-1-beaurel-2164587_2393842/src/code_barre_tb.vhd" \
+
+# Do not sort compile order
+nosort

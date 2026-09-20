@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../../labo-3-ma-2164587_2393842/src/division_par_reciproque.vhd" \
+"../../../../../labo-3-ma-2164587_2393842/src/racine_carree.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,276 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Dec  1 23:05:04 2025
+| Host         : Ivan running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 36
++---------+----------+------------------------------+--------+
+| Rule    | Severity | Description                  | Checks |
++---------+----------+------------------------------+--------+
+| DPIR-1  | Warning  | Asynchronous driver check    | 32     |
+| LUTAR-1 | Warning  | LUT drives async reset alert | 4      |
++---------+----------+------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[0].diviseur_k/arg/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg input pin inst_racine_carree_pipeline/gen_diviseur[1].diviseur_k/arg/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell zynq/A_pipeline[0][15]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_racine_carree_pipeline/xk_pipeline_reg[1][6]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[1]_rep[0]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[1]_rep[1]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[1]_rep[2]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[1]_rep[3]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[1]_rep[4]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[1]_rep[5]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[1]_rep[6]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[2][0]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[2][1]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[2][2]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[2][3]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[2][4]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[2][5]/CLR,
+inst_racine_carree_pipeline/xk_pipeline_reg[2][6]/CLR
+ (the first 15 of 75 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+zynq/zynq_i/axi_mem_intercon_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+

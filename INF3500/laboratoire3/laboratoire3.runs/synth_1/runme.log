@@ -1,0 +1,382 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Mon Nov  3 19:57:04 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 503.797 ; gain = 209.055
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2540
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1252.078 ; gain = 491.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/top.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'generateur_horloge_precis' [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/generateur_horloge_precis.vhd:28]
+	Parameter freq_in bound to: 125000000 - type: integer 
+	Parameter freq_out bound to: 50 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generateur_horloge_precis' (0#1) [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/generateur_horloge_precis.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'racine_carree' [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/racine_carree.vhd:34]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'division_par_reciproque' [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/division_par_reciproque.vhd:58]
+	Parameter W_num bound to: 32 - type: integer 
+	Parameter W_denom bound to: 16 - type: integer 
+	Parameter W_frac bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'division_par_reciproque' (0#1) [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/division_par_reciproque.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'racine_carree' (0#1) [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/racine_carree.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'monopulseur' [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/monopulseur.vhd:57]
+	Parameter polarite_bouton_active bound to: 1'b1 
+	Parameter polarite_sortie_active bound to: 1'b1 
+	Parameter duree_rebond bound to: 1 - type: integer 
+	Parameter duree_impulsion bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'monopulseur' (0#1) [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/monopulseur.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'power_on_reset' [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/power_on_reset.vhd:26]
+	Parameter reset_time bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'power_on_reset' (0#1) [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/power_on_reset.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'zynq_wrapper' [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/hdl/zynq_wrapper.vhd:44]
+INFO: [Synth 8-3491] module 'zynq' declared at 'c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:348' bound to instance 'zynq_i' of component 'zynq' [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/hdl/zynq_wrapper.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'zynq' [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:381]
+INFO: [Synth 8-3491] module 'zynq_axi_gpio_0_0' declared at 'C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/.Xil/Vivado-15880-Ivan/realtime/zynq_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'zynq_axi_gpio_0_0' [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:584]
+INFO: [Synth 8-638] synthesizing module 'zynq_axi_gpio_0_0' [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/.Xil/Vivado-15880-Ivan/realtime/zynq_axi_gpio_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'zynq_proc_sys_reset_0_0' declared at 'C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/.Xil/Vivado-15880-Ivan/realtime/zynq_proc_sys_reset_0_0_stub.vhdl:6' bound to instance 'proc_sys_reset_0' of component 'zynq_proc_sys_reset_0_0' [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:608]
+INFO: [Synth 8-638] synthesizing module 'zynq_proc_sys_reset_0_0' [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/.Xil/Vivado-15880-Ivan/realtime/zynq_proc_sys_reset_0_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'zynq_processing_system7_0_0' declared at 'C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/.Xil/Vivado-15880-Ivan/realtime/zynq_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'zynq_processing_system7_0_0' [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:621]
+INFO: [Synth 8-638] synthesizing module 'zynq_processing_system7_0_0' [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/.Xil/Vivado-15880-Ivan/realtime/zynq_processing_system7_0_0_stub.vhdl:83]
+INFO: [Synth 8-638] synthesizing module 'zynq_ps7_0_axi_periph_0' [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:279]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_15A5WQ8' [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:79]
+INFO: [Synth 8-3491] module 'zynq_ps7_0_axi_periph_imp_auto_pc_0' declared at 'C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/.Xil/Vivado-15880-Ivan/realtime/zynq_ps7_0_axi_periph_imp_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'zynq_ps7_0_axi_periph_imp_auto_pc_0' [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'zynq_ps7_0_axi_periph_imp_auto_pc_0' [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/.Xil/Vivado-15880-Ivan/realtime/zynq_ps7_0_axi_periph_imp_auto_pc_0_stub.vhdl:77]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_15A5WQ8' (0#1) [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'zynq_ps7_0_axi_periph_0' (0#1) [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:279]
+INFO: [Synth 8-256] done synthesizing module 'zynq' (0#1) [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/synth/zynq.vhd:381]
+INFO: [Synth 8-256] done synthesizing module 'zynq_wrapper' (0#1) [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/hdl/zynq_wrapper.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/src/top.vhd:17]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_15A5WQ8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_15A5WQ8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_leds_top[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_leds_top[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_leds_top[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_btns_top[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_btns_top[2] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1628.523 ; gain = 868.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1628.523 ; gain = 868.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1628.523 ; gain = 868.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1628.523 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/ip/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0_in_context.xdc] for cell 'zynq/zynq_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/ip/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0_in_context.xdc] for cell 'zynq/zynq_i/axi_gpio_0'
+Parsing XDC File [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0_in_context.xdc] for cell 'zynq/zynq_i/proc_sys_reset_0'
+Finished Parsing XDC File [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0_in_context.xdc] for cell 'zynq/zynq_i/proc_sys_reset_0'
+Parsing XDC File [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0/zynq_processing_system7_0_0_in_context.xdc] for cell 'zynq/zynq_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0/zynq_processing_system7_0_0_in_context.xdc] for cell 'zynq/zynq_i/processing_system7_0'
+Parsing XDC File [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/ip/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0_in_context.xdc] for cell 'zynq/zynq_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.gen/sources_1/bd/zynq/ip/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0_in_context.xdc] for cell 'zynq/zynq_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/xdc/PYNQ-Z2-v1.0.xdc]
+Finished Parsing XDC File [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/xdc/PYNQ-Z2-v1.0.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yogio/OneDrive/Desktop/INF3500/labo-3-ma-2164587_2393842/xdc/PYNQ-Z2-v1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1667.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1667.289 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1667.289 ; gain = 906.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1667.289 ; gain = 906.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1667.289 ; gain = 906.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'etat_reg' in module 'monopulseur'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           attend_action |                              000 |                              000
+            action_recue |                              001 |                              001
+    stabilisation_action |                              010 |                              010
+          attend_relache |                              011 |                              011
+           relache_recue |                              100 |                              100
+   stabilisation_relache |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'etat_reg' using encoding 'sequential' in module 'monopulseur'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1667.289 ; gain = 906.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   21 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Multipliers : 
+	              14x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP arg, operation Mode is: A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: Generating DSP arg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator arg is absorbed into DSP arg.
+DSP Report: operator arg is absorbed into DSP arg.
+WARNING: [Synth 8-7129] Port ACLK in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_leds_top[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_leds_top[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port o_leds_top[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_btns_top[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_btns_top[2] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1687.023 ; gain = 926.609
+---------------------------------------------------------------------------------
+ Sort Area is  arg_0 : 0 0 : 2634 5177 : Used 1 time 0
+ Sort Area is  arg_0 : 0 1 : 2543 5177 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------------------+-------------------+---------------+----------------+
+|Module Name             | RTL Object        | Depth x Width | Implemented As | 
++------------------------+-------------------+---------------+----------------+
+|division_par_reciproque | ROM_reciproque[0] | 65536x14      | LUT            | 
+|division_par_reciproque | ROM_reciproque[0] | 65536x14      | LUT            | 
++------------------------+-------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|division_par_reciproque | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|division_par_reciproque | (PCIN>>17)+A*B | 16     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1713.707 ; gain = 953.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1733.543 ; gain = 973.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1743.859 ; gain = 983.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1918.879 ; gain = 1158.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1918.879 ; gain = 1158.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1918.879 ; gain = 1158.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1918.879 ; gain = 1158.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1918.879 ; gain = 1158.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1918.879 ; gain = 1158.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|division_par_reciproque | A*B          | 17     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|division_par_reciproque | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |zynq_ps7_0_axi_periph_imp_auto_pc_0 |         1|
+|2     |zynq_axi_gpio_0_0                   |         1|
+|3     |zynq_proc_sys_reset_0_0             |         1|
+|4     |zynq_processing_system7_0_0         |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------------+------+
+|      |Cell                                     |Count |
++------+-----------------------------------------+------+
+|1     |zynq_axi_gpio_0_0_bbox                   |     1|
+|2     |zynq_proc_sys_reset_0_0_bbox             |     1|
+|3     |zynq_processing_system7_0_0_bbox         |     1|
+|4     |zynq_ps7_0_axi_periph_imp_auto_pc_0_bbox |     1|
+|5     |BUFG                                     |     1|
+|6     |CARRY4                                   |    13|
+|7     |DSP48E1                                  |     2|
+|8     |LUT1                                     |     2|
+|9     |LUT2                                     |    21|
+|10    |LUT3                                     |    28|
+|11    |LUT4                                     |    39|
+|12    |LUT5                                     |    44|
+|13    |LUT6                                     |   135|
+|14    |MUXF7                                    |    25|
+|15    |MUXF8                                    |     3|
+|16    |FDCE                                     |    53|
+|17    |FDRE                                     |    42|
+|18    |IBUF                                     |     2|
+|19    |OBUF                                     |     1|
+|20    |OBUFT                                    |     3|
++------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1918.879 ; gain = 1158.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:01:05 . Memory (MB): peak = 1918.879 ; gain = 1119.699
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1918.879 ; gain = 1158.465
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1928.004 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1931.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f564af71
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 1931.676 ; gain = 1402.055
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1931.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire3/laboratoire3.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  3 19:58:33 2025...

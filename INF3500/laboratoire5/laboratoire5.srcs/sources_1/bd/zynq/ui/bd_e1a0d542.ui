@@ -1,0 +1,37 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.586488",
+   "Default View_TopLeft":"-102,-68",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1870 -y 310 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1870 -y 330 -defaultsOSRD
+preplace port to_zynq -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port from_zynq -pg 1 -lvl 6 -x 1870 -y 240 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 6 -x 1870 -y 390 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 6 -x 1870 -y 410 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 200 -y 610 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1600 -y 360 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 880 -y 260 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 540 -y 360 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1220 -y 120 -defaultsOSRD
+preplace inst axi_mem_intercon_1 -pg 1 -lvl 4 -x 1220 -y 360 -defaultsOSRD
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 370 220 690 130 1070
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 400 380 240 710 140 1060 480 1370 480 1850
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 30 500 NJ 500 NJ 500 NJ 500 NJ 500 1840
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 3 NJ 240 NJ 240 NJ
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1050 60n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1050 220n
+preplace netloc axi_mem_intercon_1_M00_AXI 1 4 1 N 360
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1370 120n
+preplace netloc processing_system7_0_DDR 1 5 1 NJ 310
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 330
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 390 490 NJ 490 NJ 490 NJ 490 1830
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 700 210n
+preplace netloc to_zynq_2 1 0 3 NJ 230 NJ 230 NJ
+levelinfo -pg 1 0 200 540 880 1220 1600 1870
+pagesize -pg 1 -db -bbox -sgen -100 0 1990 710
+"
+}
+

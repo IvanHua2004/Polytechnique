@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zynq_proc_sys_reset_0_0_synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/zynq_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zynq_processing_system7_0_0_synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/zynq_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zynq_axi_dma_0_0_synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/zynq_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zynq_axi_mem_intercon_1_imp_auto_us_0_synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/zynq_axi_mem_intercon_1_imp_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zynq_axi_mem_intercon_imp_auto_us_0_synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/zynq_axi_mem_intercon_imp_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zynq_ps7_0_axi_periph_imp_auto_pc_0_synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/zynq_ps7_0_axi_periph_imp_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zynq_axi_mem_intercon_imp_auto_pc_0_synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/zynq_axi_mem_intercon_imp_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zynq_axi_mem_intercon_1_imp_auto_pc_0_synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/zynq_axi_mem_intercon_1_imp_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/yogio/OneDrive/Desktop/INF3500/laboratoire5/laboratoire5.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="zynq_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="zynq_processing_system7_0_0_synth_1"/>
+		<Parent Id="zynq_axi_dma_0_0_synth_1"/>
+		<Parent Id="zynq_axi_mem_intercon_1_imp_auto_us_0_synth_1"/>
+		<Parent Id="zynq_axi_mem_intercon_imp_auto_us_0_synth_1"/>
+		<Parent Id="zynq_ps7_0_axi_periph_imp_auto_pc_0_synth_1"/>
+		<Parent Id="zynq_axi_mem_intercon_imp_auto_pc_0_synth_1"/>
+		<Parent Id="zynq_axi_mem_intercon_1_imp_auto_pc_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

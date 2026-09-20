@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1762217822" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/zynq/zynq.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../Xilinx/2025.1/Vivado/data/ip/xpm/xpm_VCOMP.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/zynq/hdl/zynq_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/src/division_par_reciproque.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/src/generateur_horloge_precis.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/src/monopulseur.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/src/power_on_reset.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/src/racine_carree.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/src/top.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/src/racine_carree_tb.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/src/utilitaires_inf3500_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../labo-3-ma-2164587_2393842/xdc/PYNQ-Z2-v1.0.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="zynq_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="zynq_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="zynq_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="zynq_ps7_0_axi_periph_imp_auto_pc_0"/>
+</GenRun>

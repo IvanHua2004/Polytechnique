@@ -1,0 +1,22 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../laboratoire5.ip_user_files/bd/zynq/ip/zynq_proc_sys_reset_0_0/sim/zynq_proc_sys_reset_0_0.vhd" \
+"../../../../laboratoire5.ip_user_files/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0_sim_netlist.vhdl" \
+"../../../../laboratoire5.ip_user_files/bd/zynq/ip/zynq_axi_dma_0_0/sim/zynq_axi_dma_0_0.vhd" \
+"../../../../laboratoire5.ip_user_files/bd/zynq/ip/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0_sim_netlist.vhdl" \
+"../../../../laboratoire5.ip_user_files/bd/zynq/ip/zynq_axi_mem_intercon_imp_auto_pc_0/zynq_axi_mem_intercon_imp_auto_pc_0_sim_netlist.vhdl" \
+"../../../../laboratoire5.ip_user_files/bd/zynq/ip/zynq_axi_mem_intercon_imp_auto_us_0/zynq_axi_mem_intercon_imp_auto_us_0_sim_netlist.vhdl" \
+"../../../../laboratoire5.ip_user_files/bd/zynq/ip/zynq_axi_mem_intercon_1_imp_auto_pc_0/zynq_axi_mem_intercon_1_imp_auto_pc_0_sim_netlist.vhdl" \
+"../../../../laboratoire5.ip_user_files/bd/zynq/ip/zynq_axi_mem_intercon_1_imp_auto_us_0/zynq_axi_mem_intercon_1_imp_auto_us_0_sim_netlist.vhdl" \
+"../../../../laboratoire5.ip_user_files/bd/zynq/sim/zynq.vhd" \
+"../../../../../../../../../../Xilinx/2025.1/Vivado/data/ip/xpm/xpm_VCOMP.vhd" \
+"../../../../laboratoire5.gen/sources_1/bd/zynq/hdl/zynq_wrapper.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../../labo-5-ma-2164587_2393842/src/division_par_reciproque.vhd" \
+"../../../../../labo-5-ma-2164587_2393842/src/power_on_reset.vhd" \
+"../../../../../labo-5-ma-2164587_2393842/src/racine_carree_pipeline.vhd" \
+"../../../../../labo-5-ma-2164587_2393842/src/top.vhd" \
+
+# Do not sort compile order
+nosort
