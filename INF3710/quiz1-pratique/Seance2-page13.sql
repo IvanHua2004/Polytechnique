@@ -1,0 +1,4 @@
+SELECT M.uid
+FROM Membre AS M
+GROUP BY M.uid
+HAVING COUNT(DISTINCT gid) >= 2
