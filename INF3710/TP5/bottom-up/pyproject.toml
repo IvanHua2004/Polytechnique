@@ -1,0 +1,8 @@
+[project]
+name = "inf3710-tp5-bottom-up"
+version = "0.1.0"
+description = "INF3710 TP5 bottom-up physical query optimizer"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlglot==30.24.0",
+]
